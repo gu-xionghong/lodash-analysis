@@ -2,9 +2,20 @@
 
 Analyzing lodash's 4.17.11 version code.🚀
 
-## Source
+## [Source](https://github.com/gu-xionghong/lodash) ![](https://img.shields.io/badge/version-4.17.11-green.svg)
 
-[lodash v4.17.11](https://github.com/gu-xionghong/lodash)
+## Progress
+
+- Array ![](https://img.shields.io/badge/progress-0/66-red.svg)
+- Collection ![](https://img.shields.io/badge/progress-0/16-red.svg)
+- Date ![](https://img.shields.io/badge/progress-0/1-red.svg)
+- Function ![](https://img.shields.io/badge/progress-0/11-red.svg)
+- Lang ![](https://img.shields.io/badge/progress-0/51-red.svg)
+- Math ![](https://img.shields.io/badge/progress-0/14-red.svg)
+- Number ![](https://img.shields.io/badge/progress-0/3-red.svg)
+- Object ![](https://img.shields.io/badge/progress-0/37-red.svg)
+- String ![](https://img.shields.io/badge/progress-0/27-red.svg)
+- Util ![](https://img.shields.io/badge/progress-0/22-red.svg)
 
 ## License
 
