@@ -10,13 +10,13 @@ Analyzing lodash's 4.17.11 version code.🚀
 - [Collection](./Collection) ![](https://img.shields.io/badge/progress-0/16-red.svg)
 - [Date](./Date) ![](https://img.shields.io/badge/progress-0/1-red.svg)
 - [Function](./Function) ![](https://img.shields.io/badge/progress-0/11-red.svg)
-- [Lang](./Lang) ![](https://img.shields.io/badge/progress-0/51-red.svg)
+- [Lang](./Lang) ![](https://img.shields.io/badge/progress-1/51-red.svg)
 - [Math](./Math) ![](https://img.shields.io/badge/progress-4/14-red.svg)
 - [Number](./Number) ![](https://img.shields.io/badge/progress-0/3-red.svg)
 - [Object](./Object) ![](https://img.shields.io/badge/progress-0/37-red.svg)
 - [String](./String) ![](https://img.shields.io/badge/progress-0/27-red.svg)
 - [Util](./Util) ![](https://img.shields.io/badge/progress-0/22-red.svg)
-- [Internal](./Internal) ![](https://img.shields.io/badge/progress-0/143-red.svg)
+- [Internal](./Internal) ![](https://img.shields.io/badge/progress-1/143-red.svg)
 - [Tips](./Tips) ![](https://img.shields.io/badge/progress-1/1-green.svg)
 
 ## License
