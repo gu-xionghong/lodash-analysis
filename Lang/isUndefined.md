@@ -29,7 +29,7 @@ function isUndefined(value) {
 
 ## 原理
 
-这个函数很简单，只有一个判断条件为 `value === undefined`，但这里没有使用 `value === void 0` 是为什么呢？难道 lodash 作者不担心 `undefined` 变量被全局修改吗？查阅资料后发现，[issue]('https://github.com/lodash/lodash/issues/4041') 中也曾有人提出这样的疑惑，官方回应是：
+这个函数很简单，只有一个判断条件为 `value === undefined`，但这里没有使用 `value === void 0` 是为什么呢？难道 lodash 作者不担心 `undefined` 变量被全局修改吗？查阅资料后发现，[issue](https://github.com/lodash/lodash/issues/4041) 中也曾有人提出这样的疑惑，官方回应是：
 
 > In ES5 browsers it's not a concern.
 
