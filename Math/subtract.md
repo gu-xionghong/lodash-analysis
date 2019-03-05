@@ -27,10 +27,7 @@ import createMathOperation from './.internal/createMathOperation.js';
  * subtract(6, 4)
  * // => 2
  */
-const subtract = createMathOperation(
-  (minuend, subtrahend) => minuend - subtrahend,
-  0
-);
+const subtract = createMathOperation((minuend, subtrahend) => minuend - subtrahend, 0);
 ```
 
 ## 原理
@@ -39,4 +36,4 @@ const subtract = createMathOperation(
 
 ## 相关链接
 
-- [lodash 技巧 —— 高阶函数](./Tips/higherOrderFunction.md)
+- [lodash 技巧 —— 高阶函数](../Tips/higherOrderFunction.md)

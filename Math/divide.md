@@ -27,10 +27,7 @@ import createMathOperation from './.internal/createMathOperation.js';
  * divide(6, 4)
  * // => 1.5
  */
-const divide = createMathOperation(
-  (dividend, divisor) => dividend / divisor,
-  1
-);
+const divide = createMathOperation((dividend, divisor) => dividend / divisor, 1);
 ```
 
 ## 原理
@@ -39,4 +36,4 @@ const divide = createMathOperation(
 
 ## 相关链接
 
-- [lodash 技巧 —— 高阶函数](./Tips/higherOrderFunction.md)
+- [lodash 技巧 —— 高阶函数](../Tips/higherOrderFunction.md)

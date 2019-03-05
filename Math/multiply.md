@@ -27,10 +27,7 @@ import createMathOperation from './.internal/createMathOperation.js';
  * multiply(6, 4)
  * // => 24
  */
-const multiply = createMathOperation(
-  (multiplier, multiplicand) => multiplier * multiplicand,
-  1
-);
+const multiply = createMathOperation((multiplier, multiplicand) => multiplier * multiplicand, 1);
 ```
 
 ## 原理
@@ -39,4 +36,4 @@ const multiply = createMathOperation(
 
 ## 相关链接
 
-- [lodash 技巧 —— 高阶函数](./Tips/higherOrderFunction.md)
+- [lodash 技巧 —— 高阶函数](../Tips/higherOrderFunction.md)

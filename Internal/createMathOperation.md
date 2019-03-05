@@ -79,8 +79,8 @@ function createMathOperation(operator, defaultValue) {
 
 ## 相关链接
 
-- [lodash 技巧 —— 高阶函数](./Tips/higherOrderFunction.md)
-- [lodash 源码分析 —— isUndefined](./Lang/isUndefined.md)
+- [lodash 技巧 —— 高阶函数](../Tips/higherOrderFunction.md)
+- [lodash 源码分析 —— isUndefined](../Lang/isUndefined.md)
 - [lodash 源码分析 —— baseToNumber](../Internal/baseToNumber.md)
 - [lodash 源码分析 —— baseToString](../Internal/baseToString.md)
 
