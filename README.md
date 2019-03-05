@@ -21,6 +21,6 @@ Analyzing lodash's 4.17.11 version code.🚀
 
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">![https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png](Creative Commons License)</a>  
-<br />
-This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/gu-xionghong" property="cc:attributionName" rel="cc:attributionURL">Gu Xionghong</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)   
+
+This work by [Gu Xionghong](https://github.com/gu-xionghong) is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
