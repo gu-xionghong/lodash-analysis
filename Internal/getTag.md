@@ -38,11 +38,11 @@ Object.prototype.toString.call(null); // "[object Null]"
 // ... and more
 ```
 
-这里我们可以看到其中 `undefined` 跟 `null` 也能成功获取 `tag`，并不需要像源码中那样做 hack，[原因](<https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString#Using_toString()_to_detect_object_class>)是：
+这里我们可以看到其中 `undefined` 跟 `null` 也能成功获取 `tag`，并不需要像源码中那样做 hack，[原因](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)是：
 
 > 从 JavaScript1.8.5 开始 toString()调用 null 返回[object Null]，undefined 返回[object Undefined]，如第 5 版的 ECMAScript 和随后的 Errata。
 
 ## 参考
 
 - [MDN - Symbol.toStringTag](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag)
-- [MDN - Object.prototype.toString()](<https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString#Using_toString()_to_detect_object_class>)
+- [MDN - Object.prototype.toString()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)
