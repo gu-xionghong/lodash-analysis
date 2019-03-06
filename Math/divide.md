@@ -1,7 +1,9 @@
-# lodash 源码分析 —— divide
+# lodash 源码阅读 —— divide
 
 > You are stronger than your challenges and your challenges are making you stronger.  
 > -Karen Salmansohn
+
+本文为 《lodash 源码阅读》 系列文章，后续内容会在 [github](https://github.com/gu-xionghong/lodash-analysis) 中发布，欢迎 star，[gitbook](https://gu-xionghong.gitbook.io/lodash-analysis/) 同步更新。
 
 ## 依赖
 
@@ -9,7 +11,7 @@
 import createMathOperation from './.internal/createMathOperation.js';
 ```
 
-[lodash 源码分析 —— createMathOperation](../Internal/createMathOperation.md)
+[lodash 源码阅读 —— createMathOperation](../Internal/createMathOperation.md)
 
 ## 源码
 
@@ -32,7 +34,7 @@ const divide = createMathOperation((dividend, divisor) => dividend / divisor, 1)
 
 ## 原理
 
-`divide` 实现原理很简单，使用 `createMathOperation` 高阶函数，封装一次除法操作。`createMathOperation` 官方描述其作用是：`创建一个对两个值执行数学运算的函数`，我们可以理解成这个方法给传入的数学运算函数，加入了对传入参数进行边界检查及类型转换的功能，使其能正确返回用户想获取的值。具体实现可以查阅 [lodash 源码分析 —— createMathOperation](../Internal/createMathOperation.md)。
+`divide` 实现原理很简单，使用 `createMathOperation` 高阶函数，封装一次除法操作。`createMathOperation` 官方描述其作用是：`创建一个对两个值执行数学运算的函数`，我们可以理解成这个方法给传入的数学运算函数，加入了对传入参数进行边界检查及类型转换的功能，使其能正确返回用户想获取的值。具体实现可以查阅 [lodash 源码阅读 —— createMathOperation](../Internal/createMathOperation.md)。
 
 ## 相关链接
 

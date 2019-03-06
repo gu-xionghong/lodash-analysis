@@ -1,7 +1,9 @@
-# lodash 源码分析 —— isSymbol
+# lodash 源码阅读 —— isSymbol
 
 > Each day wake up and ask yourself what will make you feel most alive that day.
 > — Unknown
+
+本文为 《lodash 源码阅读》 系列文章，后续内容会在 [github](https://github.com/gu-xionghong/lodash-analysis) 中发布，欢迎 star，[gitbook](https://gu-xionghong.gitbook.io/lodash-analysis/) 同步更新。
 
 ## 依赖
 
@@ -9,7 +11,7 @@
 import getTag from './.internal/getTag.js';
 ```
 
-- [lodash 源码分析 —— getTag](../Internal/getTag.md)
+- [lodash 源码阅读 —— getTag](../Internal/getTag.md)
 
 ## 源码
 
@@ -58,5 +60,5 @@ getTag(symbolObject);
 
 ## 相关链接
 
-- [lodash 源码分析 —— getTag](../Internal/getTag.md)
+- [lodash 源码阅读 —— getTag](../Internal/getTag.md)
 - [从 Symbol 延伸理解 JS 包装对象](../Tips/wrapper.md)

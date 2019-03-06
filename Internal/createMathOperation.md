@@ -1,8 +1,10 @@
-# lodash 源码分析 —— createMathOperation
+# lodash 源码阅读 —— createMathOperation
 
 > Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.
 >
 > — Helen Keller
+
+本文为 《lodash 源码阅读》 系列文章，后续内容会在 [github](https://github.com/gu-xionghong/lodash-analysis) 中发布，欢迎 star，[gitbook](https://gu-xionghong.gitbook.io/lodash-analysis/) 同步更新。
 
 ## 依赖
 
@@ -11,8 +13,8 @@ import baseToNumber from './baseToNumber.js';
 import baseToString from './baseToString.js';
 ```
 
-- [lodash 源码分析 —— baseToNumber](./baseToNumber.md)
-- [lodash 源码分析 —— baseToString](./baseToString.md)
+- [lodash 源码阅读 —— baseToNumber](./baseToNumber.md)
+- [lodash 源码阅读 —— baseToString](./baseToString.md)
 
 ## 源码
 
@@ -63,7 +65,7 @@ function createMathOperation(operator, defaultValue) {
 ### undefined 检测
 
 前三个 `if` 条件，对值为 `undefined` 做了检测，并返回对应值。  
-这部分的判断条件为 `value === undefined` 而没有使用 `value === void 0`，这是为什么呢？难道 lodash 作者不担心 `undefined` 变量被全局修改吗？相关原因可以查看 [lodash 源码分析 —— isUndefined](./Lang/isUndefined.md)
+这部分的判断条件为 `value === undefined` 而没有使用 `value === void 0`，这是为什么呢？难道 lodash 作者不担心 `undefined` 变量被全局修改吗？相关原因可以查看 [lodash 源码阅读 —— isUndefined](./Lang/isUndefined.md)
 
 ### 类型转换
 
@@ -80,9 +82,9 @@ function createMathOperation(operator, defaultValue) {
 ## 相关链接
 
 - [lodash 技巧 —— 高阶函数](../Tips/higherOrderFunction.md)
-- [lodash 源码分析 —— isUndefined](../Lang/isUndefined.md)
-- [lodash 源码分析 —— baseToNumber](../Internal/baseToNumber.md)
-- [lodash 源码分析 —— baseToString](../Internal/baseToString.md)
+- [lodash 源码阅读 —— isUndefined](../Lang/isUndefined.md)
+- [lodash 源码阅读 —— baseToNumber](../Internal/baseToNumber.md)
+- [lodash 源码阅读 —— baseToString](../Internal/baseToString.md)
 
 ## 参考
 

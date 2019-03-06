@@ -3,6 +3,8 @@
 > Never look back unless you are planning to go that way.  
 > —Henry David Thoreau
 
+本文为 《lodash 源码阅读》 系列文章，后续内容会在 [github](https://github.com/gu-xionghong/lodash-analysis) 中发布，欢迎 star，[gitbook](https://gu-xionghong.gitbook.io/lodash-analysis/) 同步更新。
+
 ## 定义
 
 Wiki 中这样定义 [高阶函数（Higher-order function）](https://zh.wikipedia.org/wiki/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0)：
@@ -54,7 +56,7 @@ var getSingle = function(fn) {
 
 ## 案例
 
-### [lodash 源码分析 —— createMathOperation](../Internal/createMathOperation.md)
+### [lodash 源码阅读 —— createMathOperation](../Internal/createMathOperation.md)
 
 `lodash` 内置的 `createMathOperation` 方法，它的作用是：`创建对两个值执行数学运算的函数`，它给传入函数封装了对传入参数进行边界检查及类型转换的功能，在 (`_.add`)[../Math/add.md]、(`_.divide`)[../Math/divide.md]、(`_.multiply`)[../Math/multiply.md]、(`_.subtract`)[../Math/subtract.md] 等几个数学运算的方法里，均使用高阶函数 `createMathOperation` 对基础运算做了一层封装，这样极大的减少了重复书写代码的情况。
 

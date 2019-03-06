@@ -1,7 +1,9 @@
-# lodash 源码分析 —— baseToString
+# lodash 源码阅读 —— baseToString
 
 > Be yourself. Everyone else is already taken.  
 > — Oscar Wilde
+
+本文为 《lodash 源码阅读》 系列文章，后续内容会在 [github](https://github.com/gu-xionghong/lodash-analysis) 中发布，欢迎 star，[gitbook](https://gu-xionghong.gitbook.io/lodash-analysis/) 同步更新。
 
 ## 依赖
 
@@ -9,7 +11,7 @@
 import isSymbol from '../isSymbol.js';
 ```
 
-- [lodash 源码分析 —— isSymbol](../Lang/isSymbol.md)
+- [lodash 源码阅读 —— isSymbol](../Lang/isSymbol.md)
 
 ## 源码
 
@@ -87,7 +89,7 @@ Symbol.prototype.toString.call(symbol);
 ## 相关链接
 
 - [从 Symbol 延伸理解 JS 包装对象](../Tips/wrapper.md)
-- [lodash 源码分析 —— isSymbol](../Lang/isSymbol.md)
+- [lodash 源码阅读 —— isSymbol](../Lang/isSymbol.md)
 
 ## 参考
 

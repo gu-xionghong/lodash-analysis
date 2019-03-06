@@ -1,8 +1,10 @@
-# lodash 源码分析 —— isUndefined
+# lodash 源码阅读 —— isUndefined
 
 > Every person is a new door to a different world.
 >
 > — Six Degrees of Separation
+
+本文为 《lodash 源码阅读》 系列文章，后续内容会在 [github](https://github.com/gu-xionghong/lodash-analysis) 中发布，欢迎 star，[gitbook](https://gu-xionghong.gitbook.io/lodash-analysis/) 同步更新。
 
 ## 源码
 

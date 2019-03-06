@@ -1,7 +1,9 @@
-# lodash 源码分析 —— getTag
+# lodash 源码阅读 —— getTag
 
 > Do what you love, not what you think you're supposed to do.
 > — Unknown
+
+本文为 《lodash 源码阅读》 系列文章，后续内容会在 [github](https://github.com/gu-xionghong/lodash-analysis) 中发布，欢迎 star，[gitbook](https://gu-xionghong.gitbook.io/lodash-analysis/) 同步更新。
 
 ## 源码
 

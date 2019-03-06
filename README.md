@@ -1,6 +1,6 @@
 # Lodash Analysis🤠
 
-Analyzing lodash's 4.17.11 version code.🚀
+lodash v4.17.11 源码阅读.🚀
 
 ## [Source](https://github.com/gu-xionghong/lodash) ![](https://img.shields.io/badge/version-4.17.11-green.svg)
 
@@ -21,6 +21,6 @@ Analyzing lodash's 4.17.11 version code.🚀
 
 ## License
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)   
+[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This work by [Gu Xionghong](https://github.com/gu-xionghong) is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
