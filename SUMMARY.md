@@ -30,6 +30,6 @@
 - [createMathOperation](Internal/createMathOperation.md)
 - [getTag](Internal/getTag.md)
 
-## ~~Date~~
+## Date
 
-- [now](Date/now.md)
+- [now（已弃用）](Date/now.md)

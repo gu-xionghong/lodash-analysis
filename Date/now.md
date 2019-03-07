@@ -30,5 +30,5 @@ var now =
 
 ## 原理
 
-从代码中我们可以看出，`_.now` 是对当前环境 `Date.now` 的引用，这个方法起初的目标是为了兼容不同上下文情况下对 `Date.now` 的引用，但是使用场景并不多（作者没有联想到场景），故在 [v4.0.2](https://www.npmjs.com/package/lodash.now) 更新之后，官方宣布弃用这个 api，建议直接使用 `Date.now`  
-![](../images/Date/now-1.png)。（注：v5.0.0 版本已经移除）
+从代码中我们可以看出，`_.now` 是对当前环境 `Date.now` 的引用，这个方法起初的目标是为了兼容不同上下文情况下对 `Date.now` 的引用，但是使用场景并不多（作者没有联想到场景），故在 [v4.0.2](https://www.npmjs.com/package/lodash.now) 更新之后，官方宣布弃用这个 api，建议直接使用 `Date.now` 。
+![](../images/Date/now-1.png)

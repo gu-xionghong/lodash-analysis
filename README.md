@@ -19,7 +19,7 @@ lodash v5.0.0(Unpublished) 源码阅读.🚀。
 - Util ![](https://img.shields.io/badge/progress-0/22-red.svg)
 - Internal ![](https://img.shields.io/badge/progress-5/143-red.svg)
 - Tips ![](https://img.shields.io/badge/progress-2/2-green.svg)
-- ~~Date~~ ![](https://img.shields.io/badge/progress-1/1-green.svg)
+- ~~Date（已弃用）~~ ![](https://img.shields.io/badge/progress-1/1-green.svg)
 
 ## License
 
