@@ -44,7 +44,7 @@ new String(symbol);
 
 在 JavaScript 中，当我们进行比较操作或者加减乘除四则运算操作时，常常会触发 JavaScript 的隐式类型转换机制。其中上述的 1、2 两点便是隐式转换带来的影响，我们先来看一下标准中 [加法运算](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-addition-operator-plus) 的规则：
 
-> Runtime Semantics: Evaluation#
+> Runtime Semantics: Evaluation#  
 > AdditiveExpression:AdditiveExpression+MultiplicativeExpression
 >
 > 1. Let lref be the result of evaluating AdditiveExpression.
@@ -54,9 +54,9 @@ new String(symbol);
 > 5. Let lprim be ? `ToPrimitive`(lval). // 通过内置 [ToPrimitive](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-toprimitive) 方法获取参数原始值，Symbol 类型直接返回自身
 > 6. Let rprim be ? `ToPrimitive`(rval).
 > 7. If `Type`(lprim) is String or `Type`(rprim) is String, then
->    1. Let lstr be ? `ToString`(lprim).
->    2. Let rstr be ? `ToString`(rprim).
->    3. Return the String that is the result of concatenating lstr and rstr.
+>    a. Let lstr be ? `ToString`(lprim).
+>    b. Let rstr be ? `ToString`(rprim).
+>    c. Return the String that is the result of concatenating lstr and rstr.
 > 8. Let lnum be ? `ToNumber`(lprim).
 > 9. Let rnum be ? `ToNumber`(rprim).
 > 10. Return the result of applying the addition operation to lnum and rnum. See the Note below 12.8.5.
@@ -74,10 +74,12 @@ new String(symbol);
 | Number | 详见 [ToString Applied to the Number Type](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-tostring-applied-to-the-number-type) |
 | String | 返回参数自身 |
 | Symbol | 抛出 `TypeError` 异常 |
-| Object | 执行下面步骤：1. 将参数以字符串优先形式执行 [ToPrimitive](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-toprimitive). 2. 将原始值化的值再进行 ToString 运算 |
+| Object | 执行下面步骤：</br> 1. 将参数以字符串优先形式执行 [ToPrimitive](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-toprimitive). </br> 2. 将原始值化的值再进行 ToString 运算 |
 
 我们可以看到，只要是 `Symbol` 类型值进行 `ToString` 转换，程序直接抛出 `TypeError` 异常，[ToNumber](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-tonumber) 方法也是如此，这样就讲得通为什么直接将 `Symbol` 值进行四则运算时，系统会抛出 `TypeError: Cannot convert a Symbol value to a TYPE` 的错误了。
-为什么规范制定者们要加这条规则呢？从 [MDN](#特殊性) 里那句 `This prevents you from silently creating a new string property name from a symbol, for example.` 可以理解到，这其中一个原因是为了避免开发者在无意中使用 Symbol 类型值隐式的创建了一个字符串类型属性名，可能出现的代码情况如下：
+为什么规范制定者们要加这条规则呢？
+
+从 [MDN](#te-shu-xing) 里那句 `This prevents you from silently creating a new string property name from a symbol, for example.` 可以理解到，这其中一个原因是为了避免开发者在无意中使用 Symbol 类型值隐式的创建了一个字符串类型属性名，可能出现的代码情况如下：
 
 ```js
 const symbol = Symbol();
@@ -97,7 +99,7 @@ console.log(obj);
 
 ## ToPrimitive 转换
 
-[特殊性](#特殊性) 中描述的第 3 点
+[特殊性](#te-shu-xing) 中描述的第 3 点
 
 > When using loose equality, Object(sym) == sym returns true.
 
@@ -105,7 +107,7 @@ console.log(obj);
 
 > If Type(x) is Object and Type(y) is either String, Number, or Symbol, return the result of the comparison ToPrimitive(x) == y.
 
-当 对象类型 与 基本类型（`String/Number/Symbol`）进行宽松对比时，会将 对象类型值 传入 [ToPrimitive](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-toprimitive) 方法进行拆箱转换成基本类型值，后再进行一次宽松对比，而 `Symbol` 包装对象 `Object(sym)` 拆箱后得到的便是 `sym`，即:
+当 对象类型 与 基本类型（`String/Number/Symbol`）进行宽松对比时，会将 对象类型值 传入 [ToPrimitive](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-toprimitive) 方法进行 `拆箱转换` 成基本类型值，后再进行一次宽松对比，而 `Symbol` 包装对象 `Object(sym)` 拆箱后得到的便是 `sym`，即:
 
 ```js
 const symbol = Symbol();
@@ -145,11 +147,11 @@ ToString(symbol);
 // or and more...
 ```
 
-我们可以看出，[SymbolDescriptiveString](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-symboldescriptivestring) 便是 [Symbol.prototype.toString()](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-symbol.prototype.tostring) 最终执行的方法，所以 `String(symbol)` 最终能成功转化为对应的字符串值，而 `new String(symbol)` 在执行过程中，调用了 `ToString` 进行隐式转换，在 [ToString 转换](#ToString%20转换) 中我们已经了解到此时程序会抛出 `TypeError` 异常，流程也就不会继续往下走了。
+我们可以看出，[SymbolDescriptiveString](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-symboldescriptivestring) 便是 [Symbol.prototype.toString()](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-symbol.prototype.tostring) 最终执行的方法，所以 `String(symbol)` 最终能成功转化为对应的字符串值，而 `new String(symbol)` 在执行过程中，调用了 `ToString` 进行隐式转换，在 [ToString 转换](#tostring-zhuan-huan) 中我们已经了解到此时程序会抛出 `TypeError` 异常，流程也就不会继续往下走了。
 
 ## 结语
 
-到这里，我们便把 `Symbol` 类型转换的特殊部分，从语言标准规范中理解了一遍。如果这篇文章有帮助到你，望给个 star✨~
+到这里，我们便把 `Symbol` 类型转换的特殊部分，从语言标准规范中理解了一遍。如果这篇文章有帮助到你，给个 star✨ 呗 🍭~
 
 ## 相关链接
 
