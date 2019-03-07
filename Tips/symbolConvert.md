@@ -74,7 +74,7 @@ new String(symbol);
 | Number | 详见 [ToString Applied to the Number Type](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-tostring-applied-to-the-number-type) |
 | String | 返回参数自身 |
 | Symbol | 抛出 `TypeError` 异常 |
-| Object | 执行下面步骤：</br> 1. 将参数以字符串优先形式执行 [ToPrimitive](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-toprimitive). </br> 2. 将原始值化的值再进行 ToString 运算 |
+| Object | 执行下面步骤： 1. 将参数以字符串优先形式执行 [ToPrimitive](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-toprimitive). 2. 将原始值化的值再进行 ToString 运算 |
 
 我们可以看到，只要是 `Symbol` 类型值进行 `ToString` 转换，程序直接抛出 `TypeError` 异常，[ToNumber](http://www.ecma-international.org/ecma-262/9.0/index.html#sec-tonumber) 方法也是如此，这样就讲得通为什么直接将 `Symbol` 值进行四则运算时，系统会抛出 `TypeError: Cannot convert a Symbol value to a TYPE` 的错误了。
 为什么规范制定者们要加这条规则呢？
@@ -155,7 +155,6 @@ ToString(symbol);
 
 ## 相关链接
 
-- [JavaScript 隐式转换](#) [TODO]
 - [MDN - Symbol.toPrimitive](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive)
 - [MDN - Symbol.prototype.toString()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toString)
 - [MDN - Symbol.prototype.valueOf()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol/valueOf)
