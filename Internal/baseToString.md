@@ -65,16 +65,16 @@ assert.strictEqual(isSymbol(Object(symbol)), true);
 // ...
 ```
 
-`Object(symbol)` 是一个包装对象，包装对象存在被复写 [原始数据](https://developer.mozilla.org/zh-CN/docs/Glossary/Primitive) 方法的可能:
+`Object(symbol)` 是一个包装对象，包装对象存在被覆写 [原始数据](https://developer.mozilla.org/zh-CN/docs/Glossary/Primitive) 方法的可能:
 
 ```js
 const symbol = Object(Symbol());
 symbol.toString();
 // "Symbol()"
 
-symbol.toString = () => console.log('我被复写了');
+symbol.toString = () => console.log('我被覆写了');
 symbol.toString();
-// "我被复写了"
+// "我被覆写了"
 ```
 
 而使用 `Symbol.prototype.toString` 可以避免这种情况的发生：
@@ -84,11 +84,11 @@ Symbol.prototype.toString.call(symbol);
 // "Symbol()"
 ```
 
-针对 `Symbol` 的特殊处理原因，我另起一篇文章讲解 [从 Symbol 延伸理解 JS 包装对象](../Tips/wrapper.md)
+针对 `Symbol` 的特殊处理原因，我另起一篇文章讲解 [从 ECMAScript 中理解 Symbol 类型转换](../Tips/symbolConvert.md)
 
 ## 相关链接
 
-- [从 Symbol 延伸理解 JS 包装对象](../Tips/wrapper.md)
+- [从 ECMAScript 中理解 Symbol 类型转换](../Tips/symbolConvert.md)
 - [lodash 源码阅读 —— isSymbol](../Lang/isSymbol.md)
 
 ## 参考

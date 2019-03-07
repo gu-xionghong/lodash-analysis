@@ -60,5 +60,5 @@ getTag(symbolObject);
 
 ## 相关链接
 
+- [从 ECMAScript 中理解 Symbol 类型转换](../Tips/symbolConvert.md)
 - [lodash 源码阅读 —— getTag](../Internal/getTag.md)
-- [从 Symbol 延伸理解 JS 包装对象](../Tips/wrapper.md)

@@ -39,9 +39,9 @@ function baseToNumber(value) {
 
 ## 原理
 
-`baseToNumber` 相较于 `Number()`，主要增加了对 `Symbol` 转换的优化，针对 `Symbol` 的特殊处理原因，我另起一篇文章讲解 [从 Symbol 延伸理解 JS 包装对象](../Tips/wrapper.md)。
+`baseToNumber` 相较于 `Number()`，主要增加了对 `Symbol` 转换的优化，针对 `Symbol` 的特殊处理原因，我另起一篇文章讲解 [从 ECMAScript 中理解 Symbol 类型转换](../Tips/symbolConvert.md)。
 
 ## 相关链接
 
-- [从 Symbol 延伸理解 JS 包装对象](../Tips/wrapper.md)
+- [从 ECMAScript 中理解 Symbol 类型转换](../Tips/symbolConvert.md)
 - [lodash 源码阅读 —— isSymbol](../Lang/isSymbol.md)

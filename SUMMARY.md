@@ -22,3 +22,4 @@
 ## Tips
 
 - [高阶函数](Tips/higherOrderFunction.md)
+- [从 ECMAScript 中理解 Symbol 类型转换](Tips/symbolConvert.md)
