@@ -9,6 +9,8 @@
 
 - [isSymbol](Lang/isSymbol.md)
 - [isUndefined](Lang/isUndefined.md)
+- [toFinite](Lang/toFinite.md)
+- [toNumber](Lang/toNumber.md)
 
 ## Math
 
@@ -21,6 +23,7 @@
 
 - [clamp](Number/clamp.md)
 - [inRange](Number/inRange.md)
+- [random](Number/random.md)
 
 ## .internal
 
