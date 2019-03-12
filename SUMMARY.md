@@ -19,9 +19,15 @@
 - [ceil](Math/ceil.md)
 - [divide](Math/divide.md)
 - [floor](Math/floor.md)
+- [maxBy](Math/maxBy.md)
+- [mean](Math/mean.md)
+- [meanBy](Math/meanBy.md)
+- [minBy](Math/minBy.md)
 - [multiply](Math/multiply.md)
 - [round](Math/round.md)
 - [subtract](Math/subtract.md)
+- [sum](Math/sum.md)
+- [sumBy](Math/sumBy.md)
 
 ## Number
 
@@ -32,6 +38,7 @@
 ## .internal
 
 - [baseInRange](Internal/baseInRange.md)
+- [baseSum](Internal/baseSum.md)
 - [baseToNumber](Internal/baseToNumber.md)
 - [baseToString](Internal/baseToString.md)
 - [createMathOperation](Internal/createMathOperation.md)
