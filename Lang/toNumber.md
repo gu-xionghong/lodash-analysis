@@ -11,7 +11,7 @@ import isObject from './isObject.js';
 import isSymbol from './isSymbol.js';
 ```
 
-- [lodash 源码阅读 —— isObject](#/Lang/isObject.md)
+- [lodash 源码阅读 —— isObject](../Lang/isObject.md)
 - [lodash 源码阅读 —— isSymbol](../Lang/isSymbol.md)
 
 ## 源码
@@ -78,5 +78,5 @@ function toNumber(value) {
 
 ## 相关链接
 
-- [lodash 源码阅读 —— isObject](#/Lang/isObject.md)
+- [lodash 源码阅读 —— isObject](../Lang/isObject.md)
 - [lodash 源码阅读 —— isSymbol](../Lang/isSymbol.md)
