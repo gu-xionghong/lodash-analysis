@@ -30,13 +30,8 @@ function baseSum(array, iteratee) {
 
 ## 原理
 
-`baseSum` 使用 `for...of` 遍历 `array`，这样做的好处是可以兼容自定义 `Symbol.iterator` 的 `array` 参数以及更多的类型（例如: `String/TypeArray/Map/Set/arguments对象/DOM集合`等）；再通过传入的 `iteratee` 方法取得当前值 `current`，通过对 `current` 的类型判断，排除 `null/undefinded/NaN/Symbol` 情况，将合法的 `current` 计入 `result` 中，最终计算返回正确的总值结果。
-
-## Fix
-
-阅读版本代码存在错误，已提 [PR](https://github.com/lodash/lodash/pull/4233) 进行修复.
+`baseSum` 使用 `for...of` 遍历 `array`，这样做的好处是可以兼容自定义 `Symbol.iterator` 的 `array` 参数以及更多的类型（例如: `String/TypeArray/Map/Set/arguments对象/DOM集合`等）；再通过传入的 `iteratee` 方法取得当前值 `current`，将合法的 `current` 计入 `result` 中，最终计算返回总值结果。
 
 ## 相关链接
 
 - [MDN - for...of](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...of)
-- [lodash 源码阅读 —— isSymbol](../Lang/isSymbol.md)
