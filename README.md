@@ -8,10 +8,10 @@ lodash v5.0.0(Unpublished) 源码阅读.🚀。
 
 ## Progress
 
-- Tips ![](https://img.shields.io/badge/progress-2/2-green.svg)
+- Tips ![](https://img.shields.io/badge/progress-2/3-red.svg)
 - Array ![](https://img.shields.io/badge/progress-0/66-red.svg)
 - Collection ![](https://img.shields.io/badge/progress-0/16-red.svg)
-- Function ![](https://img.shields.io/badge/progress-0/11-red.svg)
+- Function ![](https://img.shields.io/badge/progress-7/11-red.svg)
 - Lang ![](https://img.shields.io/badge/progress-5/51-red.svg)
 - Math ![](https://img.shields.io/badge/progress-13/13-green.svg)
 - Number ![](https://img.shields.io/badge/progress-3/3-green.svg)

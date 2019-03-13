@@ -5,6 +5,16 @@
 - [高阶函数](Tips/higherOrderFunction.md)
 - [从 ECMAScript 中理解 Symbol 类型转换](Tips/symbolConvert.md)
 
+## Function
+
+- [after](Function/after.md)
+- [before](Function/before.md)
+- [defer](Function/defer.md)
+- [delay](Function/delay.md)
+- [flip](Function/flip.md)
+- [negate](Function/negate.md)
+- [once](Function/once.md)
+
 ## Lang
 
 - [isObject](Lang/isObject.md)
