@@ -9,11 +9,15 @@
 
 - [after](Function/after.md)
 - [before](Function/before.md)
+- [debounce](Function/debounce.md)
 - [defer](Function/defer.md)
 - [delay](Function/delay.md)
 - [flip](Function/flip.md)
+- [memoize](Function/memoize.md)
 - [negate](Function/negate.md)
 - [once](Function/once.md)
+- [overArgs](Function/overArgs.md)
+- [throttle](Function/throttle.md)
 
 ## Lang
 
