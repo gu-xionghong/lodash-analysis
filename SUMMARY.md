@@ -26,7 +26,7 @@
 ## Lang
 
 - [isArguments](Lang/isArguments.md)
-- [isArrayLike](Lang/isArrAYlIKE.md)
+- [isArrayLike](Lang/isArrayLike.md)
 - [isBuffer](Lang/isBuffer.md)
 - [isLength](Lang/isLength.md)
 - [isObject](Lang/isObject.md)

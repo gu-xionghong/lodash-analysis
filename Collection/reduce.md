@@ -42,6 +42,6 @@ function reduce(collection, iteratee, accumulator) {
 ## 相关链接
 
 - [MDN - Arguments](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments)
-- [lodash 源码阅读 —— arrayReduce](../Lang/arrayReduce.md)
-- [lodash 源码阅读 —— baseEach](../Lang/baseEach.md)
-- [lodash 源码阅读 —— baseReduce](../Lang/baseReduce.md)
+- [lodash 源码阅读 —— arrayReduce](../Internal/arrayReduce.md)
+- [lodash 源码阅读 —— baseEach](../Internal/baseEach.md)
+- [lodash 源码阅读 —— baseReduce](../Internal/baseReduce.md)
