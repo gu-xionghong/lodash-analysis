@@ -5,6 +5,10 @@
 - [高阶函数](Tips/higherOrderFunction.md)
 - [从 ECMAScript 中理解 Symbol 类型转换](Tips/symbolConvert.md)
 
+## Collection
+
+- [reduce](Collection/reduce.md)
+
 ## Function
 
 - [after](Function/after.md)
@@ -21,8 +25,14 @@
 
 ## Lang
 
+- [isArguments](Lang/isArguments.md)
+- [isArrayLike](Lang/isArrAYlIKE.md)
+- [isBuffer](Lang/isBuffer.md)
+- [isLength](Lang/isLength.md)
 - [isObject](Lang/isObject.md)
+- [isObjectLike](Lang/isObjectLike.md)
 - [isSymbol](Lang/isSymbol.md)
+- [isTypedArray](Lang/isTypedArray.md)
 - [isUndefined](Lang/isUndefined.md)
 - [toFinite](Lang/toFinite.md)
 - [toNumber](Lang/toNumber.md)
@@ -49,15 +59,27 @@
 - [inRange](Number/inRange.md)
 - [random](Number/random.md)
 
+## Object
+
+- [keys](Object/keys.md)
+
 ## .internal
 
+- [arrayLikeKeys](Internal/arrayLikeKeys.md)
+- [arrayReduce](Internal/arrayReduce.md)
+- [baseEach](Internal/baseEach.md)
+- [baseFor](Internal/baseFor.md)
+- [baseForOwn](Internal/baseForOwn.md)
 - [baseInRange](Internal/baseInRange.md)
+- [baseReduce](Internal/baseReduce.md)
 - [baseSum](Internal/baseSum.md)
 - [baseToNumber](Internal/baseToNumber.md)
 - [baseToString](Internal/baseToString.md)
 - [createMathOperation](Internal/createMathOperation.md)
 - [createRound](Internal/createRound.md)
 - [getTag](Internal/getTag.md)
+- [isIndex](Internal/isIndex.md)
+- [nodeTypes](Internal/nodeTypes.md)
 
 ## Date
 
