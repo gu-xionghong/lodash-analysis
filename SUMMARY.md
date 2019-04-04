@@ -7,6 +7,8 @@
 
 ## Collection
 
+- [countBy](Collection/countBy.md)
+- [partition](Collection/partition.md)
 - [reduce](Collection/reduce.md)
 
 ## Function
@@ -67,6 +69,7 @@
 
 - [arrayLikeKeys](Internal/arrayLikeKeys.md)
 - [arrayReduce](Internal/arrayReduce.md)
+- [baseAssignValue](Internal/baseAssignValue.md)
 - [baseEach](Internal/baseEach.md)
 - [baseFor](Internal/baseFor.md)
 - [baseForOwn](Internal/baseForOwn.md)
