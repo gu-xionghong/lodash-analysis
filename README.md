@@ -9,8 +9,8 @@ lodash v5.0.0(Unpublished) 源码阅读.🚀。
 ## Progress
 
 - Tips ![](https://img.shields.io/badge/progress-2/3-red.svg)
-- Array ![](https://img.shields.io/badge/progress-0/66-red.svg)
-- Collection ![](https://img.shields.io/badge/progress-3/16-red.svg)
+- Array ![](https://img.shields.io/badge/progress-2/66-red.svg)
+- Collection ![](https://img.shields.io/badge/progress-5/16-red.svg)
 - Function ![](https://img.shields.io/badge/progress-11/11-green.svg)
 - Lang ![](https://img.shields.io/badge/progress-11/51-red.svg)
 - Math ![](https://img.shields.io/badge/progress-13/13-green.svg)
@@ -18,7 +18,7 @@ lodash v5.0.0(Unpublished) 源码阅读.🚀。
 - Object ![](https://img.shields.io/badge/progress-1/37-red.svg)
 - String ![](https://img.shields.io/badge/progress-0/27-red.svg)
 - Util ![](https://img.shields.io/badge/progress-0/22-red.svg)
-- Internal ![](https://img.shields.io/badge/progress-16/143-red.svg)
+- Internal ![](https://img.shields.io/badge/progress-19/143-red.svg)
 - ~~Date（已弃用）~~ ![](https://img.shields.io/badge/progress-1/1-green.svg)
 
 ## License

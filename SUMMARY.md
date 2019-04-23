@@ -5,9 +5,16 @@
 - [高阶函数](Tips/higherOrderFunction.md)
 - [从 ECMAScript 中理解 Symbol 类型转换](Tips/symbolConvert.md)
 
+## Array
+
+- [findLastIndex](Array/findLastIndex.md)
+- [map](Array/map.md)
+
 ## Collection
 
 - [countBy](Collection/countBy.md)
+- [findLast](Collection/findLast.md)
+- [flatMap](Collection/flatMap.md)
 - [partition](Collection/partition.md)
 - [reduce](Collection/reduce.md)
 
@@ -71,6 +78,8 @@
 - [arrayReduce](Internal/arrayReduce.md)
 - [baseAssignValue](Internal/baseAssignValue.md)
 - [baseEach](Internal/baseEach.md)
+- [baseFindIndex](Internal/baseFindIndex.md)
+- [baseFlatten](Internal/baseFlatten.md)
 - [baseFor](Internal/baseFor.md)
 - [baseForOwn](Internal/baseForOwn.md)
 - [baseInRange](Internal/baseInRange.md)
@@ -81,6 +90,7 @@
 - [createMathOperation](Internal/createMathOperation.md)
 - [createRound](Internal/createRound.md)
 - [getTag](Internal/getTag.md)
+- [isFlattenable](Internal/isFlattenable.md)
 - [isIndex](Internal/isIndex.md)
 - [nodeTypes](Internal/nodeTypes.md)
 
